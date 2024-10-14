@@ -1,0 +1,6 @@
+ext {
+    versions = [
+            tomcat       : '10.0.21',
+            hibernateCore: '5.6.10.Final'
+    ]
+}
