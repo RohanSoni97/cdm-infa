@@ -1,9 +1,6 @@
 apply from: 'versions/2024.10M/TPL.gradle'
 ext {
-//    versions = [
-//            tomcat                     : '10.0.21',
-//            hibernateCore              : '5.6.10.Final'
-//    ]
+
     libs = [
             tomcat                        : "org.apache.tomcat.embed:tomcat-embed-core:$versions.tomcat",
             hibernateCore                 : "org.hibernate:hibernate-core:$versions.hibernateCore"
