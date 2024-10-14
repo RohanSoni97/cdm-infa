@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+    id 'maven-publish'
+}
+
+apply from: "dependencies.gradle"
+
+group 'com.infa'
+version '1.0.0'
+
+
+repositories {
+    mavenCentral()
+    mavenLocal()  // Publish to the local Maven repository (~/.m2/repository)
+}
+
+dependencies {
+    implementation libs.tomcat
+}
+
+test {
+    useJUnitPlatform()
+}
+
+//compileJava.dependsOn project(':dependency-plugin').publishToMavenLocal
+
+
+

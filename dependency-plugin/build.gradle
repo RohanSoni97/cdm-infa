@@ -1,0 +1,29 @@
+plugins {
+    id 'maven-publish'
+    id 'java-platform'
+}
+
+group 'com.informatica'
+version '1.0.0'
+
+
+
+dependencies {
+//    implementation libs.tomcat
+}
+
+
+
+
+publishing {
+    publications {
+        pluginMaven(MavenPublication) {
+            groupId = 'com.informatica.ccgf.components'
+            artifactId = 'dependency-plugin'
+            version = '1.0.0'
+        }
+    }
+}
+publishToMavenLocal.dependsOn build
+
+

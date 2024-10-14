@@ -1,0 +1,9 @@
+ext {
+    versions = [
+            tomcat                     : '10.0.21'
+    ]
+    libs = [
+            tomcat                        : "org.apache.tomcat.embed:tomcat-embed-core:$versions.tomcat"
+    ]
+
+}
