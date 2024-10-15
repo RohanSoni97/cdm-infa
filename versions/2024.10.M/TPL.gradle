@@ -1,12 +1,12 @@
 ext {
     versions = [
             tomcat       : '10.0.21',
-            hibernateCore: '5.6.10.Final',
+            hibernateCore: '6.4.4.Final',
             groovyJson :    '4.0.20'
     ]
     libs = [
             tomcat                        : "org.apache.tomcat.embed:tomcat-embed-core:$versions.tomcat",
-            hibernateCore                 : "org.hibernate:hibernate-core:$versions.hibernateCore",
+            hibernateCore                 : "org.hibernate.orm:hibernate-core:$versions.hibernateCore",
             groovyJson                    : "org.apache.groovy:groovy-json:$versions.groovyJson"
     ]
 }

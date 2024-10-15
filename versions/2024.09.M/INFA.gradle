@@ -1,0 +1,9 @@
+ext {
+    versions = [
+            okhttp3                    : "4.12.0",
+    ]
+    libs = [
+            okhttp3                               : "com.squareup.okhttp3:okhttp:$versions.okhttp3",
+
+    ]
+}
